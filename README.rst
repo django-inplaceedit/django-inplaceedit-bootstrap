@@ -25,6 +25,7 @@ Requirements
 
  * `Django Inplace Edit (>= 1.1.0) <http://pypi.python.org/pypi/django-inplaceedit/>`_
  * `Bootstrap (3.0.0) <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_ 
+ * `Django Inplace Edit Extra fields (>= 0.1.0) <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (optional but recommended)
 
 Installation
 ============
