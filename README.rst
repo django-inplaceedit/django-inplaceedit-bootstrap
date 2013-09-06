@@ -13,7 +13,7 @@ Information
 .. image:: https://pypip.in/d/django-inplaceedit-bootstrap/badge.png
     :target: https://pypi.python.org/pypi/django-inplaceedit-bootstrap
 
-Integration of django-inplaceedit with bootstrap 3 
+Integration of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ with `bootstrap 3 <http://getbootstrap.com/>`_
 
 It is distributed under the terms of the `GNU Lesser General Public
 License <http://www.gnu.org/licenses/lgpl.html>`_.
