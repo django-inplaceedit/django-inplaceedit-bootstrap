@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+# Copyright (c) 2013 by Pablo Martín <goinnn@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with this programe.  If not, see <http://www.gnu.org/licenses/>.
+
+from django.conf import settings
+try:
+    from django.conf.urls.defaults import include, patterns, url
+except ImportError:  # Django 1.5
+    from django.conf.urls import include, patterns, url
+
+from django.contrib import admin
+
+admin.autodiscover()
+
+js_info_dict = {
+    'packages': ('django.conf',),
+}
+
+urlpatterns = patterns('',
+    url(r'^inplaceeditform/', include('inplaceeditform.urls')),
+    url(r'^jsi18n/$', 'django.views.i18n.javascript_catalog', js_info_dict),
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', include('testing.app.urls')),
+)
+
+
+if 'testing.example_extra_fields' in settings.INSTALLED_APPS:
+    urlpatterns += patterns('',
+        url(r'^extra_fields/', include('testing.example_extra_fields.urls'))
+    )
+    if 'ajax_select' in settings.INSTALLED_APPS:
+        from ajax_select import urls as ajax_select_urls
+        urlpatterns += patterns('',
+            url(r'^ajax_select/', include(ajax_select_urls))
+        )
+
+
+urlpatterns += patterns('',
+    (r'^%s(?P<path>.*)$' % settings.MEDIA_URL[1:],
+     'django.views.static.serve',
+     {'document_root': settings.MEDIA_ROOT,
+      'show_indexes': True}),
+)
