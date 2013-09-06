@@ -27,6 +27,17 @@ Requirements
  * `Bootstrap (3.0.0) <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_ 
  * `Django Inplace Edit Extra fields (>= 0.1.0) <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (optional but recommended)
 
+Demo (this video use a very old version of django-inplaceedit and django-inplaceedit-extra-fields)
+==================================================================================================
+
+Video Demo, of django-inplaceedit, `django-inplaceedit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields>`_ and `django-inlinetrans <http://pypi.python.org/pypi/django-inlinetrans>`_ (Set full screen mode to view it correctly)
+
+
+.. image:: https://github.com/Yaco-Sistemas/django-inplaceedit/raw/master/video-frame.png
+   :target: http://www.youtube.com/watch?v=_EjisXtMy_Y
+
+**Attention**: This demo is not a demo of this package, please use the testing project
+
 Installation
 ============
 
