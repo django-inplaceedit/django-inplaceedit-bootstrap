@@ -16,7 +16,7 @@
 
 from django.contrib import admin
 
-from testing.app.models import Chunk, Alert, Panel, ListGroup
+from testing.app.models import Chunk, Alert, Panel
 
 
 class ChunkAdmin(admin.ModelAdmin):
@@ -31,11 +31,6 @@ class PanelAdmin(admin.ModelAdmin):
     pass
 
 
-class ListGroupAdmin(admin.ModelAdmin):
-    pass
-
-
 admin.site.register(Chunk, ChunkAdmin)
 admin.site.register(Alert, AlertAdmin)
 admin.site.register(Panel, PanelAdmin)
-admin.site.register(ListGroup, ListGroupAdmin)

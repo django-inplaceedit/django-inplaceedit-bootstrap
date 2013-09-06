@@ -18,11 +18,35 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
+COLOR_CHOICES = (('default', _('Default')),
+                 ('primary', _('Primary')),
+                 ('success', _('Success')),
+                 ('info', _('Info')),
+                 ('warning', _('Warning')),
+                 ('danger', _('Danger')))
+
+
+class Title(models.Model):
+
+    key = models.CharField(verbose_name=_(u'key'),
+                           max_length=100,
+                           db_index=True)
+    text = models.CharField(verbose_name=_(u'Text'),
+                            max_length=100)
+
+    class Meta:
+        verbose_name = _('Title')
+        verbose_name_plural = _('Titles')
+
+    def __unicode__(self):
+        return self.text
+
 
 class Chunk(models.Model):
 
     key = models.CharField(verbose_name=_(u'key'),
-                           max_length=100)
+                           max_length=100,
+                           db_index=True)
     text = models.TextField(verbose_name=_(u'Text'))
 
     class Meta:
@@ -35,6 +59,9 @@ class Chunk(models.Model):
 
 class Alert(models.Model):
 
+    alert_type = models.CharField(verbose_name=_(u'Alert type'),
+                                  choices=COLOR_CHOICES,
+                                  max_length=10)
     msg = models.TextField(verbose_name=_(u'Msg'))
 
     class Meta:
@@ -49,27 +76,14 @@ class Panel(models.Model):
 
     title = models.CharField(verbose_name=_(u'Title'),
                              max_length=100)
+    panel_type = models.CharField(verbose_name=_(u'Color type'),
+                                  choices=COLOR_CHOICES,
+                                  max_length=10)
     content = models.TextField(verbose_name=_(u'Content'))
 
     class Meta:
         verbose_name = _('Panel')
         verbose_name_plural = _('Panels')
-
-    def __unicode__(self):
-        return self.title
-
-
-class ListGroup(models.Model):
-
-    title = models.CharField(verbose_name=_(u'Title'),
-                             max_length=100)
-    subtitle = models.CharField(verbose_name=_(u'Subtitle'),
-                                max_length=100)
-    content = models.TextField(verbose_name=_(u'Content'))
-
-    class Meta:
-        verbose_name = _('ListGroup')
-        verbose_name_plural = _('ListGroups')
 
     def __unicode__(self):
         return self.title

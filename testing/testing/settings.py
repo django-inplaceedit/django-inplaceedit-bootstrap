@@ -160,8 +160,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 try:
     import inplaceeditform_extra_fields
-    INSTALLED_APPS += ('inplaceeditform_extra_fields',
-                       'testing.example_extra_fields')
+    INSTALLED_APPS += ('inplaceeditform_extra_fields',)
     ADAPTOR_INPLACEEDIT = {'auto_fk': 'inplaceeditform_extra_fields.fields.AdaptorAutoCompleteForeingKeyField',
                            'auto_m2m': 'inplaceeditform_extra_fields.fields.AdaptorAutoCompleteManyToManyField',
                            'image_thumb': 'inplaceeditform_extra_fields.fields.AdaptorImageThumbnailField',

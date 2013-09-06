@@ -1,0 +1,153 @@
+[{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "test", 
+        "first_name": "Pablo", 
+        "last_name": "Martín", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2011-02-17 10:56:03", 
+        "groups": [], 
+        "user_permissions": [],
+        "password": "sha1$1ad04$868abf5737e05d3b68f5cb972fda1e227cc4f7d7", 
+        "email": "", 
+        "date_joined": "2011-02-17 10:56:03"
+    }
+}, 
+{
+    "pk": 1, 
+    "model": "app.title", 
+    "fields": {
+        "key": "title",
+        "text": "Hello, world!"
+    }
+},
+{
+    "pk": 2, 
+    "model": "app.title", 
+    "fields": {
+        "key": "alert_title",
+        "text": "Alerts"
+    }
+},
+{
+    "pk": 3, 
+    "model": "app.title", 
+    "fields": {
+        "key": "panel_title",
+        "text": "Panels"
+    }
+},
+{
+    "pk": 4, 
+    "model": "app.title", 
+    "fields": {
+        "key": "well_title",
+        "text": "Wells"
+    }
+},
+{
+    "pk": 1, 
+    "model": "app.chunk", 
+    "fields": {
+        "key": "content",
+        "text": "<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>"
+    }
+},
+{
+    "pk": 2, 
+    "model": "app.chunk", 
+    "fields": {
+        "key": "well_content",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>"
+    }
+},
+{
+    "pk": 1, 
+    "model": "app.alert", 
+    "fields": {
+        "alert_type": "success",
+        "msg": "<strong>Well done!</strong> You successfully read this important alert message."
+    }
+},
+{
+    "pk": 2, 
+    "model": "app.alert", 
+    "fields": {
+        "alert_type": "info",
+        "msg": "<strong>Heads up!</strong> This alert needs your attention, but it's not super important."
+    }
+},
+{
+    "pk": 3, 
+    "model": "app.alert", 
+    "fields": {
+        "alert_type": "warning",
+        "msg": "<strong>Warning!</strong> Best check yo self, you're not looking too good."
+    }
+},
+{
+    "pk": 4, 
+    "model": "app.alert", 
+    "fields": {
+        "alert_type": "danger",
+        "msg": "<strong>Oh snap!</strong> Change a few things up and try submitting again."
+    }
+},
+{
+    "pk": 1, 
+    "model": "app.panel", 
+    "fields": {
+        "panel_type": "default",
+        "content": "Panel content 1", 
+        "title": "Panel title 1"
+    }
+},
+{
+    "pk": 2, 
+    "model": "app.panel", 
+    "fields": {
+        "panel_type": "primary",
+        "content": "Panel content 2", 
+        "title": "Panel title 2"
+    }
+},
+{
+    "pk": 3, 
+    "model": "app.panel", 
+    "fields": {
+        "panel_type": "success",
+        "content": "Panel content3", 
+        "title": "Panel title3"
+    }
+},
+{
+    "pk": 4, 
+    "model": "app.panel", 
+    "fields": {
+        "panel_type": "info",
+        "content": "Panel content 4", 
+        "title": "Panel title 4"
+    }
+},
+{
+    "pk": 5, 
+    "model": "app.panel", 
+    "fields": {
+        "panel_type": "warning",
+        "content": "Panel content 5", 
+        "title": "Panel title 5"
+    }
+},
+{
+    "pk": 6, 
+    "model": "app.panel", 
+    "fields": {
+        "panel_type": "danger",
+        "content": "Panel content 6", 
+        "title": "Panel title 6"
+    }
+}
+]
