@@ -52,7 +52,7 @@ In your settings.py
         'django.contrib.sites',
         'django.contrib.admin',
         #.....................#
-        'inplaceeditform_bootstrap',
+        'inplaceeditform_bootstrap',  # it is very important that this app is before that inplaceeditform and inplaceeditform_extra_fields
         'inplaceeditform',
         'inplaceeditform_extra_fields',  # this is optional but recommended
     )
