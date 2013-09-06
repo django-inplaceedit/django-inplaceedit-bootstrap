@@ -1,0 +1,8 @@
+include README.rst
+include CHANGES.rst
+include *.py
+recursive-include inplaceeditform_bootstrap/templates *
+recursive-include inplaceeditform_bootstrap/static *
+prune   testing/
+exclude *~
+exclude *.pyc
