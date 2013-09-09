@@ -1,8 +1,8 @@
 .. contents::
 
-===========================
-Inplace Edit Form Bootstrap
-===========================
+============================
+django-inplaceedit-bootstrap
+============================
 
 Information
 ===========
@@ -36,7 +36,7 @@ Video Demo, of django-inplaceedit, `django-inplaceedit-extra-fields <http://pypi
 .. image:: https://github.com/Yaco-Sistemas/django-inplaceedit/raw/master/video-frame.png
    :target: http://www.youtube.com/watch?v=_EjisXtMy_Y
 
-**Attention**: This demo is not a demo of this package, please use the testing project
+**Attention**: This demo is not a demo of this package, in this video there are not any inegration with bootstrap. Please to see a demo use the `testing django project <https://github.com/goinnn/django-inplaceedit-bootstrap/tree/master/testing/>`_.
 
 Installation
 ============
@@ -74,7 +74,7 @@ Why this code is not in django-inplaceedit?
 ===========================================
 
  * This code depends on the bootstrap
- * They are a specific solution
+ * This is a specific solution
 
 
 Testing
@@ -86,7 +86,7 @@ Exists a `testing django project <https://github.com/goinnn/django-inplaceedit-b
 Development
 ===========
 
-You can get the leading edge version of inplaceedit-bootstrap by doing a checkout
-of its repository:
+You can get the bleeding edge version of django-inplaceedit-bootstrap by doing a clone
+of its git repository:
 
   https://github.com/goinnn/django-inplaceedit-bootstrap
