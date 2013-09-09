@@ -41,16 +41,16 @@ Video Demo, of django-inplaceedit, `django-inplaceedit-extra-fields <http://pypi
 Installation
 ============
 
-After installing `django inplace edit egg`_
+After installing `django-inplaceedit egg`_
 
 
-.. _`django inplace edit egg`: https://django-inplaceedit.readthedocs.org/en/latest/install.html
+.. _`django-inplaceedit egg`: https://django-inplaceedit.readthedocs.org/en/latest/install.html
 
 
-And after installing `django inplace edit extra fields egg`_ (this is optional but recommended)
+And after installing `django-inplaceedit-extra-fields egg`_ (this is optional but recommended)
 
 
-.. _`django inplace edit extra fields egg`: https://pypi.python.org/pypi/django-inplaceedit-extra-fields#installation
+.. _`django-inplaceedit-extra-fields egg`: https://pypi.python.org/pypi/django-inplaceedit-extra-fields#installation
 
 In your settings.py
 -------------------
