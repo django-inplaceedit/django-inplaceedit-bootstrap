@@ -97,4 +97,4 @@ Development
 You can get the bleeding edge version of django-inplaceedit-bootstrap by doing a clone
 of its git repository:
 
-  https://github.com/goinnn/django-inplaceedit-bootstrap
+  git clone git@github.com:goinnn/django-inplaceedit-bootstrap.git
