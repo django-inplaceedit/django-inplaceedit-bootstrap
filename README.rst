@@ -23,9 +23,9 @@ This egg would not have been possible without the help of `Tyrdall <https://gith
 Requirements
 ============
 
- * `Django Inplace Edit (>= 1.1.0) <http://pypi.python.org/pypi/django-inplaceedit/>`_
+ * `django-inplace (>= 1.1.0) <http://pypi.python.org/pypi/django-inplaceedit/>`_
  * `Bootstrap (3.0.0) <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_ 
- * `Django Inplace Edit Extra fields (>= 0.1.0) <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (optional but recommended)
+ * `django-inplace-edit-extra-fields (>= 0.1.0) <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (optional but recommended)
 
 Demo (this video use a very old version of django-inplaceedit and django-inplaceedit-extra-fields)
 ==================================================================================================
@@ -81,6 +81,14 @@ Testing
 =======
 
 Exists a `testing django project <https://github.com/goinnn/django-inplaceedit-bootstrap/tree/master/testing/>`_. This project can use as demo project.
+
+This project overwrites the default options of `django-inplace <http://pypi.python.org/pypi/django-inplaceedit/>`_
+
+::
+
+    INPLACEEDIT_AUTO_SAVE = True
+    INPLACEEDIT_EVENT = "click"
+
 
 
 Development
