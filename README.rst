@@ -34,7 +34,7 @@ Video Demo, of django-inplaceedit, `django-inplaceedit-extra-fields <http://pypi
 
 
 .. image:: https://github.com/Yaco-Sistemas/django-inplaceedit/raw/master/video-frame.png
-   :target: http://www.youtube.com/watch?v=_EjisXtMy_Y
+   :target: http://www.youtube.com/watch?v=_EjisXtMy_Y?t=34s
 
 **Attention**: This demo is not a demo of this package, in this video there are not any inegration with bootstrap. Please to see a demo use the `testing django project <https://github.com/goinnn/django-inplaceedit-bootstrap/tree/master/testing/>`_.
 
