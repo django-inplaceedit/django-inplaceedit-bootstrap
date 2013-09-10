@@ -1,7 +1,7 @@
 Releases
 ========
 
-0.0.2 (2013-09-??)
+0.0.2 (2013-09-10)
 ------------------
 
  * Set the variable INPLACEEDIT_EVENT in the settings to "click"
