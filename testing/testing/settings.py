@@ -155,6 +155,8 @@ INPLACEEDIT_EVENT = "click"
 #DEFAULT_INPLACE_EDIT_OPTIONS_ONE_BY_ONE = False
 #ADAPTOR_INPLACEEDIT_EDIT = 'inplace_edit.perms.AdminDjangoPermEditInline'
 #ADAPTOR_INPLACEEDIT = {}
+#INPLACE_GET_FIELD_URL = None
+#INPLACE_SAVE_URL = None
 
 # If inplaceeditform_extra_fields is installed
 
