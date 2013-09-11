@@ -1,6 +1,7 @@
 include README.rst
 include CHANGES.rst
 include *.py
+include COPYING.LGPLv3
 recursive-include inplaceeditform_bootstrap/templates *
 recursive-include inplaceeditform_bootstrap/static *
 prune   testing/
