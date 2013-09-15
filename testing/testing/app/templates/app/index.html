@@ -18,23 +18,13 @@
     <!-- Custom styles for this template -->
     <link href="{{ STATIC_URL }}theme.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}theme_inplace.css" rel="stylesheet">
-    {% if extra_fields %}
-        {% if STATIC_URL %}
-            <link rel="stylesheet" href="{{ STATIC_URL }}adaptor_tiny/css/block_normalize.css">
-        {% else %}
-            <!-- Old version -->
-            <link rel="stylesheet" href="{{ MEDIA_URL }}inplaceeditform_extra_fields/adaptor_tiny/css/block_normalize.css">
-        {% endif %}
-    {% endif %}
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="{{ STATIC_URL }}assets/js/html5shiv.js"></script>
       <script src="{{ STATIC_URL }}assets/js/respond.min.js"></script>
     <![endif]-->
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    {% inplace_toolbar %}
+    {% inplace_css 1 %}
   </head>
 
   <body>
@@ -140,6 +130,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    {% inplace_js 1 1 %}
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="{{ STATIC_URL }}assets/js/holder.js"></script>
   </body>

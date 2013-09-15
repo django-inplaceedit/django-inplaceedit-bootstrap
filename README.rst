@@ -30,7 +30,7 @@ Requirements
 Demo (this video use a very old version of django-inplaceedit and django-inplaceedit-extra-fields)
 ==================================================================================================
 
-Video Demo, of django-inplaceedit, `django-inplaceedit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields>`_ and `django-inlinetrans <http://pypi.python.org/pypi/django-inlinetrans>`_ (Set full screen mode to view it correctly)
+Video Demo, of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit>`_, `django-inplaceedit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields>`_ and `django-inlinetrans <http://pypi.python.org/pypi/django-inlinetrans>`_ (Set full screen mode to view it correctly)
 
 
 .. image:: https://github.com/Yaco-Sistemas/django-inplaceedit/raw/master/video-frame.png
