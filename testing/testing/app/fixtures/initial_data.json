@@ -69,7 +69,7 @@
     "model": "app.alert", 
     "fields": {
         "alert_type": "success",
-        "msg": "<strong>Well done!</strong> You successfully read this important alert message."
+        "msg": "<p><strong>Well done!</strong> You successfully read this important alert message.</p>"
     }
 },
 {
@@ -77,7 +77,7 @@
     "model": "app.alert", 
     "fields": {
         "alert_type": "info",
-        "msg": "<strong>Heads up!</strong> This alert needs your attention, but it's not super important."
+        "msg": "<p><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</p>"
     }
 },
 {
@@ -85,7 +85,7 @@
     "model": "app.alert", 
     "fields": {
         "alert_type": "warning",
-        "msg": "<strong>Warning!</strong> Best check yo self, you're not looking too good."
+        "msg": "<p><strong>Warning!</strong> Best check yo self, you're not looking too good.</p>"
     }
 },
 {
@@ -93,7 +93,7 @@
     "model": "app.alert", 
     "fields": {
         "alert_type": "danger",
-        "msg": "<strong>Oh snap!</strong> Change a few things up and try submitting again."
+        "msg": "<p><strong>Oh snap!</strong> Change a few things up and try submitting again.</p>"
     }
 },
 {
@@ -101,7 +101,7 @@
     "model": "app.panel", 
     "fields": {
         "panel_type": "default",
-        "content": "Panel content 1", 
+        "content": "<p>Panel content 1</p>", 
         "title": "Panel title 1"
     }
 },
@@ -110,7 +110,7 @@
     "model": "app.panel", 
     "fields": {
         "panel_type": "primary",
-        "content": "Panel content 2", 
+        "content": "<p>Panel content 2</p>", 
         "title": "Panel title 2"
     }
 },
@@ -119,7 +119,7 @@
     "model": "app.panel", 
     "fields": {
         "panel_type": "success",
-        "content": "Panel content3", 
+        "content": "<p>Panel content 3</p>", 
         "title": "Panel title3"
     }
 },
@@ -128,7 +128,7 @@
     "model": "app.panel", 
     "fields": {
         "panel_type": "info",
-        "content": "Panel content 4", 
+        "content": "<p>Panel content 4</p>", 
         "title": "Panel title 4"
     }
 },
@@ -137,7 +137,7 @@
     "model": "app.panel", 
     "fields": {
         "panel_type": "warning",
-        "content": "Panel content 5", 
+        "content": "<p>Panel content 5</p>", 
         "title": "Panel title 5"
     }
 },
@@ -146,7 +146,7 @@
     "model": "app.panel", 
     "fields": {
         "panel_type": "danger",
-        "content": "Panel content 6", 
+        "content": "<p>Panel content 6</p>", 
         "title": "Panel title 6"
     }
 }
