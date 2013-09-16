@@ -1,8 +1,9 @@
 Releases
 ========
 
-0.0.3 (2013-09-??)
+0.0.3 (2013-09-16)
 ------------------
+ * Add the AdaptorDateBootStrapField and AdaptorDateTimeBootStrapField
  * Customize the inplaceedit toolbar
  * Customize the file adaptor
  * Improvements in the fixtures of the testing project

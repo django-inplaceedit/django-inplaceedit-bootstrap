@@ -157,6 +157,9 @@ INPLACEEDIT_EVENT = "click"
 #ADAPTOR_INPLACEEDIT = {}
 #INPLACE_GET_FIELD_URL = None
 #INPLACE_SAVE_URL = None
+#INPLACE_FIELD_TYPES = 'input, select, textarea'
+#INPLACE_FOCUS_WHEN_EDITING = True
+
 
 # If inplaceeditform_extra_fields is installed
 
@@ -166,7 +169,7 @@ try:
     ADAPTOR_INPLACEEDIT = {'auto_fk': 'inplaceeditform_extra_fields.fields.AdaptorAutoCompleteForeingKeyField',
                            'auto_m2m': 'inplaceeditform_extra_fields.fields.AdaptorAutoCompleteManyToManyField',
                            'image_thumb': 'inplaceeditform_extra_fields.fields.AdaptorImageThumbnailField',
-                           'tiny': 'inplaceeditform_extra_fields.fields.AdaptorTinyMCEField'}
+                           'textarea': 'inplaceeditform_extra_fields.fields.AdaptorTinyMCEField'}
     try:
         import ajax_select
         INSTALLED_APPS += ('ajax_select',)

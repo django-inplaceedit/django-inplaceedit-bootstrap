@@ -26,6 +26,7 @@ Requirements
  * `django-inplace (>= 1.1.0) <http://pypi.python.org/pypi/django-inplaceedit/>`_
  * `Bootstrap (3.0.0) <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_ 
  * `django-inplace-edit-extra-fields (>= 0.1.0) <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (optional but recommended)
+ * `django-bootstrap3-datetimepicker (== 1.0.3) <http://pypi.python.org/pypi/django-bootstrap3-datetimepicker/>`_ (optional but recommended)
 
 Demo (this video use a very old version of django-inplaceedit and django-inplaceedit-extra-fields)
 ==================================================================================================
@@ -47,10 +48,16 @@ After installing `django-inplaceedit egg`_
 .. _`django-inplaceedit egg`: https://django-inplaceedit.readthedocs.org/en/latest/install.html
 
 
-And after installing `django-inplaceedit-extra-fields egg`_ (this is optional but recommended)
+After installing `django-inplaceedit-extra-fields egg`_ (this is optional but recommended)
 
 
 .. _`django-inplaceedit-extra-fields egg`: https://pypi.python.org/pypi/django-inplaceedit-extra-fields#installation
+
+And after installing `django-bootstrap3-datetimepicker egg`_ (this is optional but recommended)
+
+
+.. _`django-bootstrap3-datetimepicker egg`: https://pypi.python.org/pypi/django-bootstrap3-datetimepicker
+
 
 In your settings.py
 -------------------
@@ -67,7 +74,36 @@ In your settings.py
         'inplaceeditform_bootstrap',  # it is very important that this app is before that inplaceeditform and inplaceeditform_extra_fields
         'inplaceeditform',
         'inplaceeditform_extra_fields',  # this is optional but recommended
+        'bootstrap3_datetime', # this is optional but recommended
     )
+
+    ...
+
+    ADAPTOR_INPLACEEDIT = {}
+    if 'inplaceeditform_extra_fields' in INSTALLED_APPS:
+        ADAPTOR_INPLACEEDIT['tiny'] = 'inplaceeditform_extra_fields.fields.AdaptorTinyMCEField'
+        # You can add the other adaptors of inplaceeditform_extra_fields
+        # https://pypi.python.org/pypi/django-inplaceedit-extra-fields#installation
+    if 'bootstrap3_datetime' in INSTALLED_APPS:
+        ADAPTOR_INPLACEEDIT['date'] = 'inplaceeditform_bootstrap.fields.AdaptorDateBootStrapField'
+        ADAPTOR_INPLACEEDIT['datetime'] = 'inplaceeditform_bootstrap.fields.AdaptorDateTimeBootStrapField'
+
+If you want, you can register these fields in your settings with different keys:
+
+::
+    ...
+
+    if 'bootstrap3_datetime' in INSTALLED_APPS:
+        ADAPTOR_INPLACEEDIT['date_bootstrap'] = 'inplaceeditform_bootstrap.fields.AdaptorDateBootStrapField'
+        ADAPTOR_INPLACEEDIT['datetime_bootstrap'] = 'inplaceeditform_bootstrap.fields.AdaptorDateTimeBootStrapField'
+
+And after that, to want use a specific adaptor you can pass it to the templatetag, e.g.:
+
+::
+
+   {% inplace_edit "content.field_name" adaptor="date_bootstrap" %}
+   {% inplace_edit "content.field_name" adaptor="datetime_bootstrap" %}
+
 
 
 Why this code is not in django-inplaceedit?

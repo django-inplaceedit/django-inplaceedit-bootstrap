@@ -55,7 +55,7 @@ class AdaptorDateBootStrapField(BaseAdaptorDateBootStrapField):
 
     @property
     def name(self):
-        return 'date'
+        return 'date_bootstrap'
 
     def __init__(self, *args, **kwargs):
         super(AdaptorDateBootStrapField, self).__init__(*args, **kwargs)
@@ -68,7 +68,7 @@ class AdaptorDateTimeBootStrapField(BaseAdaptorDateBootStrapField):
 
     @property
     def name(self):
-        return 'datetime'
+        return 'datetime_bootstrap'
 
     def __init__(self, *args, **kwargs):
         super(AdaptorDateTimeBootStrapField, self).__init__(*args, **kwargs)
