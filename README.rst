@@ -24,7 +24,7 @@ Requirements
 ============
 
  * `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ (>= 1.2.1)
- * `Bootstrap <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_  (==3.0.0)
+ * `Bootstrap <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_  (== 3.0.0)
  * `django-inplace-edit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (>= 0.3.0, optional but recommended)
  * `django-bootstrap3-datetimepicker <http://pypi.python.org/pypi/django-bootstrap3-datetimepicker/>`_ (== 1.0.3, optional but recommended)
 
