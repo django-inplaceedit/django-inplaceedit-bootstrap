@@ -75,6 +75,16 @@
       </div>
 
       <div class="page-header">
+        <h1>Thumbnails</h1>
+      </div>
+      {% for thumbnail in thumbnails %}
+            {% if extra_fields and sorl_thumbnail %}
+                {% inplace_edit "thumbnail.img" alt="{{ obj.alt }}", classes="img-thumbnail", adaptor="image_thumb", size="200x200" %}
+            {% else %}
+                {% inplace_edit "thumbnail.img" alt="{{ obj.alt }}", classes="img-thumbnail", width="200", height="200" %}
+            {% endif %}
+      {% endfor %}
+      <div class="page-header">
         <h1>{% inplace_edit "alert_title.text" %}</h1>
       </div>
       {% for alert in alerts %}

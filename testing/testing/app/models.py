@@ -38,6 +38,9 @@ class Title(models.Model):
         verbose_name = _('Title')
         verbose_name_plural = _('Titles')
 
+    def __str__(self):
+        return self.text
+
     def __unicode__(self):
         return self.text
 
@@ -53,6 +56,9 @@ class Chunk(models.Model):
         verbose_name = _('Chunk')
         verbose_name_plural = _('Chunks')
 
+    def __str__(self):
+        return self.text
+
     def __unicode__(self):
         return self.text
 
@@ -67,6 +73,9 @@ class Alert(models.Model):
     class Meta:
         verbose_name = _('Alert')
         verbose_name_plural = _('Alerts')
+
+    def __str__(self):
+        return self.msg
 
     def __unicode__(self):
         return self.msg
@@ -84,6 +93,26 @@ class Panel(models.Model):
     class Meta:
         verbose_name = _('Panel')
         verbose_name_plural = _('Panels')
+
+    def __str__(self):
+        return self.title
+
+    def __unicode__(self):
+        return self.title
+
+
+class Thumbnail(models.Model):
+
+    alt = models.CharField(verbose_name=_(u'Alt'),
+                           max_length=200)
+    img = models.ImageField(verbose_name=_(u'Image'), upload_to='thumbnails')
+
+    class Meta:
+        verbose_name = _('Thumbnail')
+        verbose_name_plural = _('Thumbnails')
+
+    def __str__(self):
+        return self.text
 
     def __unicode__(self):
         return self.title

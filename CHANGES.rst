@@ -1,6 +1,13 @@
 Releases
 ========
 
+0.0.3 (2013-09-??)
+------------------
+ * Customize the inplaceedit toolbar
+ * Customize the file adaptor
+ * Improvements in the fixtures of the testing project
+
+
 0.0.2 (2013-09-10)
 ------------------
 

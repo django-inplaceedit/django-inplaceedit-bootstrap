@@ -15,7 +15,8 @@
   color: #d9534f;
 }
 .inplaceeditform .apply,
-.inplaceeditform .cancel {
+.inplaceeditform .cancel,
+.inplaceeditform .applyFile {
   display: inline-block;
   margin-left: 5px;
   text-decoration: none;

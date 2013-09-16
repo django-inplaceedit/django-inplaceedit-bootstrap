@@ -49,6 +49,14 @@
     }
 },
 {
+    "pk": 5, 
+    "model": "app.title", 
+    "fields": {
+        "key": "thumbnails_title",
+        "text": "Thumbnails"
+    }
+},
+{
     "pk": 1, 
     "model": "app.chunk", 
     "fields": {
@@ -148,6 +156,22 @@
         "panel_type": "danger",
         "content": "<p>Panel content 6</p>", 
         "title": "Panel title 6"
+    }
+},
+{
+    "pk": 1, 
+    "model": "app.thumbnail", 
+    "fields": {
+        "alt": "A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera",
+        "img": "thumbnails/example1.png"
+    }
+},
+{
+    "pk": 2, 
+    "model": "app.thumbnail", 
+    "fields": {
+        "alt": "A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera",
+        "img": "thumbnails/example2.png"
     }
 }
 ]
