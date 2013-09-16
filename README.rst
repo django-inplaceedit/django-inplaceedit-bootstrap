@@ -23,15 +23,15 @@ This egg would not have been possible without the help of `Tyrdall <https://gith
 Requirements
 ============
 
- * `django-inplace (>= 1.1.0) <http://pypi.python.org/pypi/django-inplaceedit/>`_
- * `Bootstrap (3.0.0) <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_ 
- * `django-inplace-edit-extra-fields (>= 0.1.0) <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (optional but recommended)
- * `django-bootstrap3-datetimepicker (== 1.0.3) <http://pypi.python.org/pypi/django-bootstrap3-datetimepicker/>`_ (optional but recommended)
+ * `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ (>= 1.2.1)
+ * `Bootstrap <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_  (==3.0.0)
+ * `django-inplace-edit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (>= 0.3.0, optional but recommended)
+ * `django-bootstrap3-datetimepicker <http://pypi.python.org/pypi/django-bootstrap3-datetimepicker/>`_ (== 1.0.3, optional but recommended)
 
 Demo (this video use a very old version of django-inplaceedit and django-inplaceedit-extra-fields)
 ==================================================================================================
 
-Video Demo, of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit>`_, `django-inplaceedit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields>`_ and `django-inlinetrans <http://pypi.python.org/pypi/django-inlinetrans>`_ (Set full screen mode to view it correctly)
+Video Demo, of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_, `django-inplaceedit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields>`_ and `django-inlinetrans <http://pypi.python.org/pypi/django-inlinetrans>`_ (Set full screen mode to view it correctly)
 
 
 .. image:: https://github.com/Yaco-Sistemas/django-inplaceedit/raw/master/video-frame.png
