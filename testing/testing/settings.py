@@ -169,7 +169,7 @@ try:
     ADAPTOR_INPLACEEDIT = {'auto_fk': 'inplaceeditform_extra_fields.fields.AdaptorAutoCompleteForeingKeyField',
                            'auto_m2m': 'inplaceeditform_extra_fields.fields.AdaptorAutoCompleteManyToManyField',
                            'image_thumb': 'inplaceeditform_extra_fields.fields.AdaptorImageThumbnailField',
-                           'textarea': 'inplaceeditform_extra_fields.fields.AdaptorTinyMCEField'}
+                           'tiny': 'inplaceeditform_extra_fields.fields.AdaptorTinyMCEField'}
     try:
         import ajax_select
         INSTALLED_APPS += ('ajax_select',)
