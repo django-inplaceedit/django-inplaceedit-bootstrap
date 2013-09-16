@@ -110,7 +110,8 @@
     "fields": {
         "panel_type": "default",
         "content": "<p>Panel content 1</p>", 
-        "title": "Panel title 1"
+        "title": "Panel title 1",
+        "creation_time": "1982-11-14T03:03:01"
     }
 },
 {
@@ -119,7 +120,8 @@
     "fields": {
         "panel_type": "primary",
         "content": "<p>Panel content 2</p>", 
-        "title": "Panel title 2"
+        "title": "Panel title 2",
+        "creation_time": "1985-07-01T09:26:48"
     }
 },
 {
@@ -128,7 +130,8 @@
     "fields": {
         "panel_type": "success",
         "content": "<p>Panel content 3</p>", 
-        "title": "Panel title3"
+        "title": "Panel title3",
+        "creation_time": "2013-11-14T10:11:13"
     }
 },
 {
@@ -137,7 +140,8 @@
     "fields": {
         "panel_type": "info",
         "content": "<p>Panel content 4</p>", 
-        "title": "Panel title 4"
+        "title": "Panel title 4",
+        "creation_time": "2014-07-01T10:11:12"
     }
 },
 {
@@ -146,7 +150,8 @@
     "fields": {
         "panel_type": "warning",
         "content": "<p>Panel content 5</p>", 
-        "title": "Panel title 5"
+        "title": "Panel title 5",
+        "creation_time": "2012-03-21T09:26:48"
     }
 },
 {
@@ -155,7 +160,8 @@
     "fields": {
         "panel_type": "danger",
         "content": "<p>Panel content 6</p>", 
-        "title": "Panel title 6"
+        "title": "Panel title 6",
+        "creation_time": "2012-11-10T00:00:00"
     }
 },
 {

@@ -88,6 +88,7 @@ class Panel(models.Model):
     panel_type = models.CharField(verbose_name=_(u'Color type'),
                                   choices=COLOR_CHOICES,
                                   max_length=10)
+    creation_time = models.DateTimeField(verbose_name=_(u'Creation time'))
     content = models.TextField(verbose_name=_(u'Content'))
 
     class Meta:

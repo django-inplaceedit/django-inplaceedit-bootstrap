@@ -188,6 +188,17 @@ except ImportError:
     pass
 
 
+# If bootstrap3_datetime is installed
+
+try:
+    import bootstrap3_datetime
+    INSTALLED_APPS += ('bootstrap3_datetime',)
+    ADAPTOR_INPLACEEDIT = ADAPTOR_INPLACEEDIT or {}
+    ADAPTOR_INPLACEEDIT['date'] = 'inplaceeditform_bootstrap.fields.AdaptorDateBootStrapField'
+    ADAPTOR_INPLACEEDIT['datetime'] = 'inplaceeditform_bootstrap.fields.AdaptorDateTimeBootStrapField'
+except ImportError:
+    pass
+
 # Custom settings to the different django versions
 
 import django

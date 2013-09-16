@@ -107,7 +107,7 @@
             {% endif %}
             <div class="panel panel-{{ panel.panel_type }}">
                 <div class="panel-heading">
-                    <h3 class="panel-title">{% inplace_edit "panel.title" %}</h3>
+                    <h3 class="panel-title">{% inplace_edit "panel.title" %} ({% inplace_edit "panel.creation_time" %})</h3>
                 </div>
                 <div class="panel-body">
                     {% if extra_fields %}
