@@ -1,6 +1,16 @@
 Releases
 ========
 
+0.1.2 (2013-09-17)
+------------------
+
+* Improvements in the testing project
+
+0.1.1 (2013-09-17)
+------------------
+
+* Improvements in the testing project
+
 0.1.0 (2013-09-17)
 ------------------
 

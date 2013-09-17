@@ -23,7 +23,7 @@ def read(*rnames):
 
 setup(
     name="django-inplaceedit-bootstrap",
-    version="0.1.0",
+    version="0.1.2",
     author="Pablo Martin",
     author_email="goinnn@gmail.com",
     description="Integration of django-inplaceedit and bootstrap",

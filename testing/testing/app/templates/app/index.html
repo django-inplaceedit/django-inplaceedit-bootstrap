@@ -75,7 +75,7 @@
       </div>
 
       <div class="page-header">
-        <h1>Thumbnails</h1>
+        <h1>{% inplace_edit "thumbnail_title.text" %}</h1>
       </div>
       {% for thumbnail in thumbnails %}
             {% if extra_fields and sorl_thumbnail %}
@@ -90,7 +90,7 @@
       {% for alert in alerts %}
         <div class="alert alert-{{ alert.alert_type }}">
             {% if extra_fields %}
-                {% inplace_edit "alert.msg" adaptor="tiny" %}
+                {% inplace_edit "alert.msg" adaptor="tiny_simple" %}
             {% else %}
                 {% inplace_edit "alert.msg|safe" %}
             {% endif %}
