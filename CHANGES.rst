@@ -1,8 +1,15 @@
 Releases
 ========
 
+0.1.0 (2013-09-17)
+------------------
+
+* Improvements in the README file
+
+
 0.0.3 (2013-09-16)
 ------------------
+
  * Add the AdaptorDateBootStrapField and AdaptorDateTimeBootStrapField
  * Customize the inplaceedit toolbar
  * Customize the file adaptor

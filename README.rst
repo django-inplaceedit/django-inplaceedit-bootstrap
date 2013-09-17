@@ -23,9 +23,9 @@ This egg would not have been possible without the help of `Tyrdall <https://gith
 Requirements
 ============
 
- * `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ (>= 1.2.1)
+ * `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ (>= 1.2.2)
  * `Bootstrap <https://github.com/twbs/bootstrap/archive/v3.0.0.zip>`_  (== 3.0.0)
- * `django-inplace-edit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (>= 0.3.0, optional but recommended)
+ * `django-inplace-edit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (>= 0.3.1, optional but recommended)
  * `django-bootstrap3-datetimepicker <http://pypi.python.org/pypi/django-bootstrap3-datetimepicker/>`_ (== 1.0.3, optional but recommended)
 
 Demo (this video use a very old version of django-inplaceedit and django-inplaceedit-extra-fields)
