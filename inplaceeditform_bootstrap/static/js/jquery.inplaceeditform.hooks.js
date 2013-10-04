@@ -7,7 +7,7 @@
             var self = $.inplaceeditform;
             enableActionInplaceEditOriginal();
             self.inplaceeditfields.attr("data-toggle", "tooltip");
-            self.inplaceeditfields.attr("title","Double Click to Edit");
+            self.inplaceeditfields.attr("title", self.opts.tooltipText);
         },
         disableInplaceEditAction: function(inplace_span) {
             var self = $.inplaceeditform;

@@ -78,6 +78,7 @@ In your settings.py
     )
 
     ...
+    # Optional, but recommended
 
     ADAPTOR_INPLACEEDIT = {}
     if 'inplaceeditform_extra_fields' in INSTALLED_APPS:
@@ -87,6 +88,8 @@ In your settings.py
     if 'bootstrap3_datetime' in INSTALLED_APPS:
         ADAPTOR_INPLACEEDIT['date'] = 'inplaceeditform_bootstrap.fields.AdaptorDateBootStrapField'
         ADAPTOR_INPLACEEDIT['datetime'] = 'inplaceeditform_bootstrap.fields.AdaptorDateTimeBootStrapField'
+
+    INPLACEEDIT_EDIT_TOOLTIP_TEXT = 'Please doubleclick to edit'
 
 If you want, you can register these fields in your settings with different keys:
 
@@ -118,13 +121,13 @@ Testing
 
 Exists a `testing django project <https://github.com/goinnn/django-inplaceedit-bootstrap/tree/master/testing/>`_. This project can use as demo project.
 
-This project overwrites the default options of `django-inplace <http://pypi.python.org/pypi/django-inplaceedit/>`_
+This project overwrites the default options of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ and a default option of django-inplaceedit-bootstrap
 
 ::
 
     INPLACEEDIT_AUTO_SAVE = True
-    INPLACEEDIT_EVENT = "click"
-
+    INPLACEEDIT_EVENT = 'click'
+    INPLACEEDIT_EDIT_TOOLTIP_TEXT = 'Click to edit'  # This option is of django-inplaceedit-bootstrap
 
 
 Development

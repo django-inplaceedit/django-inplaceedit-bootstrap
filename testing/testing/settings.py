@@ -150,7 +150,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 #INPLACEEDIT_EDIT_EMPTY_VALUE = 'Double click to edit...'
 INPLACEEDIT_AUTO_SAVE = True
-INPLACEEDIT_EVENT = "click"
+INPLACEEDIT_EVENT = 'click'
 #INPLACEEDIT_DISABLE_CLICK = False
 #INPLACEEDIT_EDIT_MESSAGE_TRANSLATION = 'Write a translation...'
 #INPLACEEDIT_SUCCESS_TEXT = 'Successfully saved...'
@@ -165,6 +165,9 @@ INPLACEEDIT_EVENT = "click"
 #INPLACE_FIELD_TYPES = 'input, select, textarea'
 #INPLACE_FOCUS_WHEN_EDITING = True
 
+# django-inplaceedit-bootstrap customization
+
+INPLACEEDIT_EDIT_TOOLTIP_TEXT = 'Click to edit' # By default 'Double click to edit'
 
 # If inplaceeditform_extra_fields is installed
 
