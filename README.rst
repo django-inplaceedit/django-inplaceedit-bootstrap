@@ -94,6 +94,7 @@ In your settings.py
 If you want, you can register these fields in your settings with different keys:
 
 ::
+
     ...
 
     if 'bootstrap3_datetime' in INSTALLED_APPS:
