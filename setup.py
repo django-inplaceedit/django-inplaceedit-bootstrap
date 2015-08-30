@@ -23,7 +23,7 @@ def read(*rnames):
 
 setup(
     name="django-inplaceedit-bootstrap",
-    version="0.1.1",
+    version="0.2.0",
     author="Pablo Martin",
     author_email="goinnn@gmail.com",
     description="Integration of django-inplaceedit and bootstrap",
@@ -41,5 +41,5 @@ setup(
     packages=find_packages('.'),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['django-inplaceedit>=1.2.3']
+    install_requires=['django-inplaceedit>=1.4.0']
 )

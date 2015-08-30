@@ -17,11 +17,10 @@
         },
         transformField: function (tags) {
             var self = $.inplaceeditform;
-            var height = $(tags).find(self.opts.fieldTypes).height();
-            $(tags).find(self.opts.fieldTypes).addClass("form-control");
-            if (height > 0) {
-                $(tags).find(self.opts.fieldTypes).height(height + 10);
-            }
+            var field = $(tags).find(self.opts.fieldTypes);
+            field.addClass("form-control");
+            field.css("padding-bottom", "0px");
+            field.css("padding-top", "0px");
         }
     });
 })(jQuery);

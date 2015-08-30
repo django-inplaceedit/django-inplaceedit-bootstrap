@@ -174,22 +174,9 @@ INPLACEEDIT_EDIT_TOOLTIP_TEXT = 'Click to edit' # By default 'Double click to ed
 try:
     import inplaceeditform_extra_fields
     INSTALLED_APPS += ('inplaceeditform_extra_fields',)
-    ADAPTOR_INPLACEEDIT = {'auto_fk': 'inplaceeditform_extra_fields.fields.AdaptorAutoCompleteForeingKeyField',
-                           'auto_m2m': 'inplaceeditform_extra_fields.fields.AdaptorAutoCompleteManyToManyField',
-                           'image_thumb': 'inplaceeditform_extra_fields.fields.AdaptorImageThumbnailField',
+    ADAPTOR_INPLACEEDIT = {'image_thumb': 'inplaceeditform_extra_fields.fields.AdaptorImageThumbnailField',
                            'tiny': 'inplaceeditform_extra_fields.fields.AdaptorTinyMCEField',
                            'tiny_simple': 'inplaceeditform_extra_fields.fields.AdaptorSimpleTinyMCEField'}
-    try:
-        import ajax_select
-        INSTALLED_APPS += ('ajax_select',)
-        AJAX_LOOKUP_CHANNELS = {
-            'typeresource': {'model': 'multimediaresources.typeresource',
-                             'search_field': 'name'},
-            'user': {'model': 'auth.user',
-                     'search_field': 'username'},
-        }
-    except ImportError:
-        pass
     try:
         import sorl
         INSTALLED_APPS += ('sorl.thumbnail',)
