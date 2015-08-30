@@ -1,11 +1,14 @@
 Releases
 ========
 
-0.1.2 (2013-09-??)
+0.2.0 (2015-08-30)
 ------------------
 
 * Add Tooltip on Mouseover
 * Improvements in the testing project
+* Support to Django 1.7 and Django 1.8
+* Support to the last versions of the django-bootstrap3-datetimepicker
+* Upgrate bootstrap version
 
 0.1.1 (2013-09-17)
 ------------------

@@ -10,15 +10,13 @@ Information
 .. image:: https://badge.fury.io/py/django-inplaceedit-bootstrap.png
     :target: https://badge.fury.io/py/django-inplaceedit-bootstrap
 
-.. image:: https://pypip.in/d/django-inplaceedit-bootstrap/badge.png
-    :target: https://pypi.python.org/pypi/django-inplaceedit-bootstrap
 
 Integration of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ with `bootstrap 3 <http://getbootstrap.com/>`_
 
 It is distributed under the terms of the `GNU Lesser General Public
 License <http://www.gnu.org/licenses/lgpl.html>`_.
 
-This egg would not have been possible without the help of `Tyrdall <https://github.com/Yaco-Sistemas/django-inplaceedit/pull/33>`_
+This egg would not have been possible without the help of `Tyrdall <https://github.com/django-inplaceedit/django-inplaceedit/pull/33>`_
 
 Requirements
 ============
@@ -34,7 +32,7 @@ Demo (this video use a very old version of django-inplaceedit and django-inplace
 Video Demo, of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_, `django-inplaceedit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields>`_ and `django-inlinetrans <http://pypi.python.org/pypi/django-inlinetrans>`_ (Set full screen mode to view it correctly)
 
 
-.. image:: https://github.com/Yaco-Sistemas/django-inplaceedit/raw/master/video-frame.png
+.. image:: https://github.com/django-inplaceedit/django-inplaceedit/raw/master/video-frame.png
    :target: http://www.youtube.com/watch?v=_EjisXtMy_Y?t=34s
 
 **Attention**: This demo is not a demo of this package, in this video there are not any inegration with bootstrap. Please to see a demo use the `testing django project <https://github.com/goinnn/django-inplaceedit-bootstrap/tree/master/testing/>`_.
@@ -42,18 +40,18 @@ Video Demo, of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceed
 Installation
 ============
 
-After installing `django-inplaceedit egg`_
+After installing `django-inplaceedit egg`_ (1.4.0)
 
 
 .. _`django-inplaceedit egg`: https://django-inplaceedit.readthedocs.org/en/latest/install.html
 
 
-After installing `django-inplaceedit-extra-fields egg`_ (this is optional but recommended)
+After installing `django-inplaceedit-extra-fields egg`_ (0.6.0, this is optional but recommended)
 
 
 .. _`django-inplaceedit-extra-fields egg`: https://pypi.python.org/pypi/django-inplaceedit-extra-fields#installation
 
-And after installing `django-bootstrap3-datetimepicker egg`_ (this is optional but recommended)
+And after installing `django-bootstrap3-datetimepicker egg`_ (2.2.3, this is optional but recommended)
 
 
 .. _`django-bootstrap3-datetimepicker egg`: https://pypi.python.org/pypi/django-bootstrap3-datetimepicker
@@ -120,7 +118,7 @@ Why this code is not in django-inplaceedit?
 Testing
 =======
 
-Exists a `testing django project <https://github.com/goinnn/django-inplaceedit-bootstrap/tree/master/testing/>`_. This project can use as demo project.
+Exists a `testing django project <https://github.com/django-inplaceedit/django-inplaceedit-bootstrap/tree/master/testing/>`_. This project can use as demo project.
 
 This project overwrites the default options of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ and a default option of django-inplaceedit-bootstrap
 
@@ -137,4 +135,4 @@ Development
 You can get the bleeding edge version of django-inplaceedit-bootstrap by doing a clone
 of its git repository:
 
-  git clone git@github.com:goinnn/django-inplaceedit-bootstrap.git
+  git clone git@github.com:django-inplaceedit/django-inplaceedit-bootstrap.git
