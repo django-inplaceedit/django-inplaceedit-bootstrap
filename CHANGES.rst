@@ -5,6 +5,7 @@ Releases
 ------------------
 
 * Add Tooltip on Mouseover
+* Add form-class to the fields
 * Improvements in the testing project
 * Support to Django 1.7 and Django 1.8
 * Support to the last versions of the django-bootstrap3-datetimepicker

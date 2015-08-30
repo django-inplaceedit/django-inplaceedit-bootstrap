@@ -15,5 +15,13 @@
             self.inplaceeditfields.removeAttr("data-toggle");
             self.inplaceeditfields.removeAttr("title");
         },
+        transformField: function (tags) {
+            var self = $.inplaceeditform;
+            var height = $(tags).find(self.opts.fieldTypes).height();
+            $(tags).find(self.opts.fieldTypes).addClass("form-control");
+            if (height > 0) {
+                $(tags).find(self.opts.fieldTypes).height(height + 10);
+            }
+        }
     });
 })(jQuery);
