@@ -21,9 +21,9 @@ This egg would not have been possible without the help of `Tyrdall <https://gith
 Requirements
 ============
 
- * `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ (== 1.4.0)
+ * `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceedit/>`_ (== 1.4.1)
  * `Bootstrap <https://github.com/twbs/bootstrap/archive/v3.3.5.zip>`_  (== 3.3.5)
- * `django-inplace-edit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (== 0.6.0, optional but recommended)
+ * `django-inplace-edit-extra-fields <http://pypi.python.org/pypi/django-inplaceedit-extra-fields/>`_ (== 0.6.1, optional but recommended)
  * `django-bootstrap3-datetimepicker <http://pypi.python.org/pypi/django-bootstrap3-datetimepicker/>`_ (== 2.2.3, optional but recommended)
 
 Demo (this video use a very old version of django-inplaceedit and django-inplaceedit-extra-fields)
@@ -40,13 +40,13 @@ Video Demo, of `django-inplaceedit <http://pypi.python.org/pypi/django-inplaceed
 Installation
 ============
 
-After installing `django-inplaceedit egg`_ (1.4.0)
+After installing `django-inplaceedit egg`_ (1.4.1)
 
 
 .. _`django-inplaceedit egg`: https://django-inplaceedit.readthedocs.org/en/latest/install.html
 
 
-After installing `django-inplaceedit-extra-fields egg`_ (0.6.0, this is optional but recommended)
+After installing `django-inplaceedit-extra-fields egg`_ (0.6.1, this is optional but recommended)
 
 
 .. _`django-inplaceedit-extra-fields egg`: https://pypi.python.org/pypi/django-inplaceedit-extra-fields#installation

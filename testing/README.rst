@@ -26,25 +26,18 @@ Install the required packages
 
     $ pip install Django
     $ pip install Pillow (the version depends on your Python version)
-    $ pip install django-inplaceedit==1.4.0
-    $ pip install django-inplaceedit-extra-fields==0.6.0
+    $ pip install django-inplaceedit==1.4.1
+    $ pip install django-inplaceedit-extra-fields==0.6.1
     $ pip install sorl-thumbnail==12.3
     $ pip install django-bootstrap3-datetimepicker==2.2.3
     $ python setup.py develop
     $ cd testing
-    $ pip install -r requirements.txt
 
 Install django-transmeta, if you want test this integration
 
 ::
 
-    $ pip install django-transmeta
-
-Install django-inplaceedit-extra-fields and its dependencies, if you want test this integration (sorl-thumbnail and django-ajax-selects)
-
-::
-
-    $ pip install django-inplaceedit-extra-fields sorl-thumbnail==12.3 django-ajax-selects==1.3.6
+    $ pip install django-transmeta==0.7.3
 
 Create db and load fixtures
 
@@ -56,6 +49,6 @@ Start the debug server
 
 ::
 
-    $ ./manage.py runserver
+    $ python manage.py runserver
 
 Do your stuffs
