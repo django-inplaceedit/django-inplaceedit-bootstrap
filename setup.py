@@ -37,7 +37,7 @@ setup(
     ],
     license="LGPL 3",
     keywords="django,inplace,inline edit, bootstrap,inline form,inline,inplace edit,inplace form,ajax",
-    url='https://github.com/goinnn/django-inplaceedit-bootstrap',
+    url='https://github.com/django-inplaceedit/django-inplaceedit-bootstrap',
     packages=find_packages('.'),
     include_package_data=True,
     zip_safe=False,
