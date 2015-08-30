@@ -57,7 +57,7 @@ class BaseAdaptorDateBootStrapField(BaseAdaptorField):
             if getattr(self.request, 'inplace_js_extra', None) is None:
                 self.request.inplace_js_extra = ''
             scripts = ''.join(field.field.widget.media.render_js())
-            if not scripts in self.request.inplace_js_extra:
+            if scripts not in self.request.inplace_js_extra:
                 self.request.inplace_js_extra += scripts
             return value
         return render_to_string('inplaceeditform_bootstrap/adaptor_date/render_value_edit.html',
@@ -76,7 +76,7 @@ class AdaptorDateBootStrapField(BaseAdaptorDateBootStrapField):
     def __init__(self, *args, **kwargs):
         super(AdaptorDateBootStrapField, self).__init__(*args, **kwargs)
         self.filter_render_value = "date:'%s'" % settings.DATE_FORMAT
-        self.options = {"format": "yyyy-MM-dd",
+        self.options = {"format": "YYYY-MM-DD",
                         "pickTime": False}
 
 
@@ -89,4 +89,4 @@ class AdaptorDateTimeBootStrapField(BaseAdaptorDateBootStrapField):
     def __init__(self, *args, **kwargs):
         super(AdaptorDateTimeBootStrapField, self).__init__(*args, **kwargs)
         self.filter_render_value = "date:'%s'" % settings.DATETIME_FORMAT
-        self.options = {}
+        self.options = {"format": "YYYY-MM-DD HH:mm:ss"}
